@@ -53,11 +53,7 @@ margin-top: 2rem;
 
 
 .video{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 2rem;
     border-radius: 1rem;
-
 }
 
 .imagen{
@@ -68,14 +64,20 @@ margin-top: 2rem;
 
 .contenedor-flex{
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
 }
 
 .elemento-flex{
+    border: solid 1px black;
     display: flex;
     flex-direction: row;
 }
+
+.video-settings{
+    width: 50%;
+    min-height: 300px;
+}
+
 
 .boton{
     border: solid black 3px;
@@ -88,6 +90,16 @@ margin-top: 2rem;
     font-size: large;
 }
 
+.card{
+    margin: 15px;
+}
+.cont-cards{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* Header */
 
 .nav-bar{
@@ -95,10 +107,14 @@ margin-top: 2rem;
     margin: 1rem 0 2rem 0;
 }
 
+.logoPosition{
+    display: flex;
+    justify-content: center;
+}
+
 .logo{
     height: 150px;
     width: 800px;
-    margin-left: 38rem;
 }
 
 nav ul li a{
@@ -131,6 +147,10 @@ main img{
     height: 315px;;
 }
 
+.class-p{
+    width: 50%;
+}
+
 /* Footer */
 
 .boton-wsp{
@@ -139,9 +159,16 @@ main img{
     bottom: 20px;
     width: 6rem;
 }
+.boton-wsp:hover{
+    transform: scale(1.1);
+}
 
 .redes{
     width: 6rem;
+}
+
+.redes:hover{
+    transform: scale(1.1);
 }
 
 footer{
@@ -179,3 +206,32 @@ body main form #enviar{
     font-size: 25px;
     padding: 15px;
 }
+
+.cont-carousel{
+    display: flex;
+    justify-content: center;
+}
+
+#carouselExample{
+    width: 50%;
+    margin: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .contenedor-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .elemento-flex{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-settings{
+        width: auto;
+        justify-content: center;
+    }
+    }
