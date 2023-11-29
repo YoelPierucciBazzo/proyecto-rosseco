@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---link a bootstrap--->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
        <!-- Link a css -->
     <link rel="stylesheet" href="../style.css">
     <!-- Link a Favicon -->
@@ -32,13 +34,37 @@
     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/uKR6eATl__4?si=miML0awWbZgYRiHu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, beatae odio minus perspiciatis tempora nisi accusamus aperiam consequatur laboriosam qui explicabo unde architecto quas sunt asperiores tempore fugiat cum velit.</p>
-    <img class="imagen" src="../medios/foto-peli-1.jpg" alt="foto rodaje de película">
-    <img class="imagen" src="../medios/foto-peli-2.jpg" alt="foto rodaje de película">
-    <img class="imagen" src="../medios/foto-peli-3.jpg" alt="foto de rodaje de película">
-    <img class="imagen" src="../medios/foto-peli-4.jpg" alt="foto de rodaje de película">
-    <img class="imagen" src="../medios/foto-peli-5.jpg" alt="foto de rodaje de película">
-    <img class="imagen" src="../medios/foto-peli-6.jpg" alt="foto de rodaje de película">
     <!-- Finalización main -->
+<!---Inserté un carrusel de bootstrap-->
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../medios/foto-peli-1.jpg" class="d-block w-100" alt="foto de rodaje de película">
+      </div>
+      <div class="carousel-item">
+        <img src="../medios/foto-peli-2.jpg" class="d-block w-100" alt="foto de rodaje de película">
+      </div>
+      <div class="carousel-item">
+        <img src="../medios/foto-peli-3.jpg" class="d-block w-100" alt="foto de rodaje de película">
+      </div>
+      <div class="carousel-item">
+        <img src="../medios/foto-peli-4.jpg" class="d-block w-100" alt="foto de rodaje de película">
+      </div>
+      <div class="carousel-item">
+        <img src="../medios/foto-peli-5.jpg" class="d-block w-100" alt="foto de rodaje de película">
+      </div>
+      <div class="carousel-item">
+        <img src="../medios/foto-peli-6.jpg" class="d-block w-100" alt="foto de rodaje de película">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  <!---Fin de carrusel de Bootstrap-->
 </main>
     <footer>
          <!-- Inicio footer -->
@@ -47,6 +73,8 @@
         <a target="_blank" href="https://www.instagram.com/rossecofilms/"><img class="redes" src="../medios/instagram-logo.png" alt="logo-instagram"></a>
         <a target="_blank" href="https://www.youtube.com/@rossecofilms5774"><img class="redes" src="../medios/yt-logo.png" alt="logo-youtube"></a>
         <a target="_blank" href="https://www.facebook.com/rossecofilms?locale=es_LA"><img class="redes" src="../medios/facebook-logo.png" alt="logo-facebook"></a>
+        <!---Script de bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
          <!-- Finalización footer -->
     </footer>
 </body>
