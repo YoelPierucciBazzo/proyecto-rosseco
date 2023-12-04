@@ -1,0 +1,237 @@
+/* Reseteo */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Generales */
+
+@font-face {
+    font-family: "fuente-titulo";
+    src: url(./medios/Interstate\ Black.ttf);
+}
+
+@font-face {
+    font-family: "fuente-parrafo";
+    src: url(./medios/HelveticaNeueLTStd-LtCn.otf);
+}
+
+body {
+    background-color:antiquewhite;
+}
+
+h1 {
+    font-size: 50px;
+    background-color:coral;
+    font-family: "fuente-titulo";
+}
+
+h2{
+    font-size: 30px;
+    font-family: fuente-titulo;
+    font-weight: lighter;
+    text-decoration: underline;
+    margin-top: 1rem;
+}
+
+h3 {
+    text-decoration: underline;
+    font-family: fuente-titulo;
+    font-weight: lighter;
+}
+
+p{
+font-size: 1.5rem;
+font-family: fuente-parrafo;
+font-weight: lighter;
+margin-left: 10rem;
+margin-right: 10rem;
+margin-top: 2rem;
+}
+
+
+
+.video{
+    border-radius: 1rem;
+}
+
+.imagen{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.contenedor-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.elemento-flex{
+    border: solid 1px black;
+    display: flex;
+    flex-direction: row;
+}
+
+.video-settings{
+    width: 50%;
+    min-height: 300px;
+}
+
+
+.boton{
+    border: solid black 3px;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: coral;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.card{
+    margin: 15px;
+}
+.cont-cards{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Header */
+
+.nav-bar{
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.logoPosition{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    height: 150px;
+    width: 800px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 8px;
+    background-color:azure;
+    border-radius: 0.5rem;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    font-family: fuente-parrafo;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+header {
+    background-color: coral;
+    height: 13rem;
+}
+
+/* Main */
+
+main{
+    text-align: center;
+}
+main img{
+    width: 600px;
+    height: 315px;;
+}
+
+.class-p{
+    width: 50%;
+}
+
+/* Footer */
+
+.boton-wsp{
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    width: 6rem;
+}
+.boton-wsp:hover{
+    transform: scale(1.1);
+}
+
+.redes{
+    width: 6rem;
+}
+
+.redes:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    background-color:coral;
+    text-align: center;
+}
+
+
+/* Formulario */
+body main form {
+    width: 100%;
+    background-color: azure;
+    height: 50%;
+    padding: 30px;
+}
+
+body main form h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+
+body main form input{
+    width: 100%;
+    font-size: 25px;
+}
+
+body main form textarea{
+    width: 100%;
+    font-size: 25px;
+}
+
+body main form #enviar{
+    background-color: coral;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.cont-carousel{
+    display: flex;
+    justify-content: center;
+}
+
+#carouselExample{
+    width: 50%;
+    margin: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .contenedor-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .elemento-flex{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-settings{
+        width: auto;
+        justify-content: center;
+    }
+    }
