@@ -66,11 +66,13 @@ p {
   border: solid 1px black;
   display: flex;
   flex-direction: row;
+  height: 300px;
+  margin: 20px;
 }
 
 .video-settings {
-  width: 50%;
-  min-height: 300px;
+  width: 60%;
+  height: 100%;
 }
 
 .boton {
@@ -206,8 +208,56 @@ body main form #enviar {
 }
 
 #carouselExample {
-  width: 50%;
   margin: 20px;
+}
+
+.contenedor-grid img{
+    height:100%;
+    width: auto;
+    border-radius: 30px;
+}
+
+.contenedor-grid{
+    display: grid;
+  grid-template-columns: repeat(2, auto);
+ grid-template-areas: "nacho-imagen nacho-texto"
+                        "andres-imagen andres-texto"
+                        "alvaro-imagen alvaro-texto"
+                        "matias-imagen matias-texto";
+grid-gap: 10px;
+margin: 20px;
+}
+
+.imagen-1{
+    grid-area: nacho-imagen;
+}
+
+.texto-1{
+    grid-area: nacho-texto;
+}
+
+.imagen-2{
+    grid-area: andres-imagen;
+}
+
+.texto-2{
+    grid-area: andres-texto;
+}
+
+.imagen-3{
+grid-area: alvaro-imagen;
+}
+
+.texto-3{
+    grid-area: alvaro-texto;
+}
+
+.imagen-4{
+    grid-area: matias-imagen;
+}
+
+.texto-4{
+    grid-area: matias-texto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -219,10 +269,24 @@ body main form #enviar {
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: auto;
+    margin: 0px;
   }
   .video-settings {
     width: auto;
     justify-content: center;
+    margin: 10px;
+  }
+  .contenedor-grid{
+    grid-template-columns: repeat(1,auto);
+    grid-template-areas: "nacho-imagen" 
+                        "nacho-texto"
+                        "andres-imagen" 
+                        "andres-texto"
+                        "alvaro-imagen" 
+                        "alvaro-texto"
+                        "matias-imagen"
+                         "matias-texto";
   }
 }
 
