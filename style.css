@@ -132,6 +132,8 @@ nav ul li {
 header {
   background-color: coral;
   height: auto;
+  z-index: 99;
+  position: relative;
 }
 
 header .logo{
@@ -157,7 +159,7 @@ main img {
 }
 
 .class-p {
-  width: 50%;
+  width: auto;
   font-size:x-large;
 }
 
@@ -324,6 +326,7 @@ grid-area: alvaro-imagen;
                         "alvaro-texto"
                         "matias-imagen"
                          "matias-texto";
+grid-gap: 10px;
   }
 
   header{
@@ -369,6 +372,23 @@ grid-area: alvaro-imagen;
     flex-direction: column;
     padding: 5px;
   }
+
+  p{
+    margin: auto;
+    margin-top: 15px;
+    padding: 20px;
+  }
+
+  h3{
+    margin: 10px;
+  }
+
+  .video{
+    width: 90vw;
+    height: 250px;
+    margin: 10px;
+  }
+
 
 }
 /*# sourceMappingURL=style.css.map */
