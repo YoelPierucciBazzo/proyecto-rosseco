@@ -104,15 +104,11 @@ p {
 /* Header */
 .nav-bar {
   text-align: center;
-  margin: 1rem 0 2rem 0;
-}
-
-.logoPosition {
   display: flex;
   justify-content: center;
 }
 
-.logo {
+.logo-hidden {
   height: 150px;
   width: 800px;
 }
@@ -122,6 +118,7 @@ nav ul li a {
   padding: 8px;
   background-color: azure;
   border-radius: 0.5rem;
+  color: coral;
 }
 
 nav ul li {
@@ -134,7 +131,19 @@ nav ul li {
 
 header {
   background-color: coral;
-  height: 13rem;
+  height: auto;
+}
+
+header .logo{
+  display: none;
+}
+
+header #btn_menu{
+  display: none;
+}
+
+header label{
+  display: none;
 }
 
 /* Main */
@@ -180,7 +189,7 @@ footer {
 /* Formulario */
 body main form {
   width: 100%;
-  background-color: azure;
+  background-color: faebd7;
   height: 50%;
   padding: 30px;
 }
@@ -246,6 +255,7 @@ margin: 20px;
     grid-area: nacho-texto;
     border: solid  black 2px;
     background-color: coral;
+    height: auto;
 }
 
 .imagen-2{
@@ -256,6 +266,7 @@ margin: 20px;
     grid-area: andres-texto;
     border: solid  black 2px;
     background-color: coral;
+    height: auto;
 }
 
 .imagen-3{
@@ -266,6 +277,7 @@ grid-area: alvaro-imagen;
     grid-area: alvaro-texto;
     border: solid  black 2px;
     background-color: coral;
+    height: auto;
 }
 
 .imagen-4{
@@ -276,6 +288,7 @@ grid-area: alvaro-imagen;
     grid-area: matias-texto;
     border: solid  black 2px;
     background-color: coral;
+    height: auto;
 }
 
 .video-pelicula{
@@ -283,8 +296,8 @@ grid-area: alvaro-imagen;
   height: 315px; 
   margin-top: 20px;
 }
-
-@media only screen and (max-width: 600px) {
+/* Media para mobile */
+@media only screen and (max-width: 768px) {
   .contenedor-flex {
     display: flex;
     flex-direction: column;
@@ -312,6 +325,50 @@ grid-area: alvaro-imagen;
                         "matias-imagen"
                          "matias-texto";
   }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .logo-hidden{
+    display: none;
+  }
+
+  header .logo{
+    display: block;
+    width: 300px;
+    margin-left: 25px;
+  }
+
+  header label{
+    display: block;
+    position: relative;
+    right: 25px;
+  }
+
+  header label img{
+    width: 50px;
+  }
+
+  .nav-bar{
+    position: absolute;
+    top: 65px;
+    background-color: coral;
+    width: 100vw;
+    visibility: hidden;
+  }
+
+  #btn_menu:checked ~ .nav-bar{
+    visibility: visible;
 }
 
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+}
 /*# sourceMappingURL=style.css.map */
