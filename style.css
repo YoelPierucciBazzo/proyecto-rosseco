@@ -166,6 +166,88 @@ main img {
   font-size:x-large;
 }
 
+.contenedor-grid img{
+  height:60%;
+  width: auto;
+  border-radius: 30px;
+}
+
+.contenedor-grid img:hover{
+transform: scale(1.2);
+}
+
+.contenedor-grid{
+  display: grid;
+grid-template-columns: repeat(2, auto);
+grid-template-areas: "nacho-imagen nacho-texto"
+                      "andres-imagen andres-texto"
+                      "alvaro-imagen alvaro-texto"
+                      "matias-imagen matias-texto";
+grid-gap: 10px;
+margin: 20px;
+
+}
+
+.imagen-1{
+  grid-area: nacho-imagen;
+}
+
+.texto-1{
+  grid-area: nacho-texto;
+  border: solid  black 2px;
+  background-color: coral;
+  height: auto;
+}
+
+.imagen-2{
+  grid-area: andres-imagen;
+}
+
+.texto-2{
+  grid-area: andres-texto;
+  border: solid  black 2px;
+  background-color: coral;
+  height: auto;
+}
+
+.imagen-3{
+grid-area: alvaro-imagen;
+}
+
+.texto-3{
+  grid-area: alvaro-texto;
+  border: solid  black 2px;
+  background-color: coral;
+  height: auto;
+}
+
+.imagen-4{
+  grid-area: matias-imagen;
+}
+
+.texto-4{
+  grid-area: matias-texto;
+  border: solid  black 2px;
+  background-color: coral;
+  height: auto;
+}
+
+
+/* Aquella noche */
+.cont-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+#carouselExample {
+  margin: 20px;
+}
+
+.video-pelicula{
+  width: 560px;
+  height: 315px; 
+  margin-top: 20px;
+}
 /* Footer */
 .boton-wsp {
   position: fixed;
@@ -221,86 +303,6 @@ body main form #enviar {
   padding: 15px;
 }
 
-.cont-carousel {
-  display: flex;
-  justify-content: center;
-}
-
-#carouselExample {
-  margin: 20px;
-}
-
-.contenedor-grid img{
-    height:60%;
-    width: auto;
-    border-radius: 30px;
-}
-
-.contenedor-grid img:hover{
-  transform: scale(1.2);
-}
-
-.contenedor-grid{
-    display: grid;
-  grid-template-columns: repeat(2, auto);
- grid-template-areas: "nacho-imagen nacho-texto"
-                        "andres-imagen andres-texto"
-                        "alvaro-imagen alvaro-texto"
-                        "matias-imagen matias-texto";
-grid-gap: 10px;
-margin: 20px;
-
-}
-
-.imagen-1{
-    grid-area: nacho-imagen;
-}
-
-.texto-1{
-    grid-area: nacho-texto;
-    border: solid  black 2px;
-    background-color: coral;
-    height: auto;
-}
-
-.imagen-2{
-    grid-area: andres-imagen;
-}
-
-.texto-2{
-    grid-area: andres-texto;
-    border: solid  black 2px;
-    background-color: coral;
-    height: auto;
-}
-
-.imagen-3{
-grid-area: alvaro-imagen;
-}
-
-.texto-3{
-    grid-area: alvaro-texto;
-    border: solid  black 2px;
-    background-color: coral;
-    height: auto;
-}
-
-.imagen-4{
-    grid-area: matias-imagen;
-}
-
-.texto-4{
-    grid-area: matias-texto;
-    border: solid  black 2px;
-    background-color: coral;
-    height: auto;
-}
-
-.video-pelicula{
-  width: 560px;
-  height: 315px; 
-  margin-top: 20px;
-}
 /* Media para mobile */
 @media only screen and (max-width: 768px) {
   .contenedor-flex {
@@ -347,7 +349,7 @@ grid-area: alvaro-imagen;
 
   header .logo{
     display: block;
-    width: 300px;
+    width: 200px;
     margin-left: 25px;
   }
 
@@ -358,13 +360,13 @@ grid-area: alvaro-imagen;
   }
 
   header label img{
-    width: 50px;
+    width: 40px;
   }
 
   .nav-bar{
     position: absolute;
     top: 50px;
-    background-color: coral;
+    background-color: #E2E3E5;
     width: 100vw;
     visibility: hidden;
   }
