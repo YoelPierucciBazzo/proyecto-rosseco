@@ -363,7 +363,7 @@ grid-area: alvaro-imagen;
 
   .nav-bar{
     position: absolute;
-    top: 65px;
+    top: 50px;
     background-color: coral;
     width: 100vw;
     visibility: hidden;
