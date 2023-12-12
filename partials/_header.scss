@@ -1,0 +1,42 @@
+header{
+    background-color: coral;
+    height: auto;
+    z-index: 99;
+    position: relative;
+    .logo{
+        display: none;
+    }
+    #btn_menu{
+        display: none;
+    }
+    label{
+        display: none;
+    }
+    .nar-bar{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        ul{
+            div{
+                .logo-hidden{
+                    height: 150px;
+                    width: 800px;
+                }
+            }
+            li{
+                list-style-type: none;
+                display: inline;
+                font-family: fuente-parrafo;
+                font-weight: bolder;
+                padding: 1rem;
+                a{
+                    text-decoration: none;
+                    padding: 8px;
+                    background-color: azure;
+                    border-radius: 0.5rem;
+                    color: coral;
+                }
+            }
+        }
+    }
+}

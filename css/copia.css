@@ -1,85 +1,88 @@
 /* Reseteo */
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-/* Generales */
-
-@font-face {
+  }
+  
+  /* Generales */
+  @font-face {
     font-family: "fuente-titulo";
     src: url(../medios/Interstate\ Black.ttf);
-}
-
-@font-face {
+  }
+  @font-face {
     font-family: "fuente-parrafo";
     src: url(../medios/HelveticaNeueLTStd-LtCn.otf);
-}
-
-body {
-    background-color:antiquewhite;
-}
-
-h1 {
+  }
+  body {
+    background-color: antiquewhite;
+  }
+  
+  h1 {
     font-size: 50px;
-    background-color:coral;
     font-family: "fuente-titulo";
-}
-
-h2{
+    margin: 20px;
+  }
+  
+  h2 {
     font-size: 30px;
     font-family: fuente-titulo;
     font-weight: lighter;
     text-decoration: underline;
     margin-top: 1rem;
-}
-
-h3 {
+  }
+  
+  h3 {
     text-decoration: underline;
     font-family: fuente-titulo;
     font-weight: lighter;
-}
-
-p{
-font-size: 1.5rem;
-font-family: fuente-parrafo;
-font-weight: lighter;
-margin-left: 10rem;
-margin-right: 10rem;
-margin-top: 2rem;
-}
-
-
-
-.video{
-    border-radius: 1rem;
-}
-
-.imagen{
+  }
+  
+  p {
+    font-size: 1.5rem;
+    font-family: fuente-parrafo;
+    font-weight: lighter;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+  }
+  
+  .relleno{
+    background-color: coral;
+  }
+  
+  
+  .imagen {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
-}
-
-.contenedor-flex{
+  }
+  
+  .contenedor-flex {
     display: flex;
     flex-direction: column;
-}
-
-.elemento-flex{
+  }
+  
+  .elemento-flex {
     border: solid 1px black;
     display: flex;
     flex-direction: row;
-}
-
-.video-settings{
-    width: 50%;
-    min-height: 300px;
-}
-
-
-.boton{
+    height: 300px;
+    margin: 20px;
+  }
+  
+  .video-settings {
+    border-radius: 10px;
+    height: 100%;
+  }
+  
+  .video-principal{
+    width: 80%;
+    height: 400px;
+    border-radius: 10px;
+  }
+  
+  .boton {
     border: solid black 3px;
     padding: 4px;
     border-radius: 4px;
@@ -88,150 +91,316 @@ margin-top: 2rem;
     text-decoration: none;
     color: black;
     font-size: large;
-}
-
-.card{
+  }
+  
+  .card {
     margin: 15px;
-}
-.cont-cards{
+  }
+  
+  .cont-cards {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-/* Header */
-
-.nav-bar{
+  }
+  
+  /* Header */
+  .nav-bar {
     text-align: center;
-    margin: 1rem 0 2rem 0;
-}
-
-.logoPosition{
     display: flex;
     justify-content: center;
-}
-
-.logo{
+  }
+  
+  .logo-hidden {
     height: 150px;
     width: 800px;
-}
-
-nav ul li a{
+  }
+  
+  nav ul li a {
     text-decoration: none;
     padding: 8px;
-    background-color:azure;
+    background-color: azure;
     border-radius: 0.5rem;
-}
-
-nav ul li{
+    color: coral;
+  }
+  
+  nav ul li {
     list-style-type: none;
     display: inline;
     font-family: fuente-parrafo;
     font-weight: bolder;
     padding: 1rem;
-}
-
-header {
+  }
+  
+  header {
     background-color: coral;
-    height: 13rem;
-}
-
-/* Main */
-
-main{
+    height: auto;
+    z-index: 99;
+    position: relative;
+  }
+  
+  header .logo{
+    display: none;
+  }
+  
+  header #btn_menu{
+    display: none;
+  }
+  
+  header label{
+    display: none;
+  }
+  
+  /* Main */
+  main {
     text-align: center;
-}
-main img{
+  }
+  
+  main img {
     width: 600px;
-    height: 315px;;
-}
-
-.class-p{
-    width: 50%;
-}
-
-/* Footer */
-
-.boton-wsp{
+    height: 315px;
+  }
+  
+  .class-p {
+    width: auto;
+    font-size:x-large;
+  }
+  
+  .contenedor-grid img{
+    height:60%;
+    width: auto;
+    border-radius: 30px;
+  }
+  
+  .contenedor-grid img:hover{
+  transform: scale(1.2);
+  }
+  
+  .contenedor-grid{
+    display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas: "nacho-imagen nacho-texto"
+                        "andres-imagen andres-texto"
+                        "alvaro-imagen alvaro-texto"
+                        "matias-imagen matias-texto";
+  grid-gap: 10px;
+  margin: 20px;
+  
+  }
+  
+  .imagen-1{
+    grid-area: nacho-imagen;
+  }
+  
+  .texto-1{
+    grid-area: nacho-texto;
+    border: solid  black 2px;
+    background-color: coral;
+    height: auto;
+  }
+  
+  .imagen-2{
+    grid-area: andres-imagen;
+  }
+  
+  .texto-2{
+    grid-area: andres-texto;
+    border: solid  black 2px;
+    background-color: coral;
+    height: auto;
+  }
+  
+  .imagen-3{
+  grid-area: alvaro-imagen;
+  }
+  
+  .texto-3{
+    grid-area: alvaro-texto;
+    border: solid  black 2px;
+    background-color: coral;
+    height: auto;
+  }
+  
+  .imagen-4{
+    grid-area: matias-imagen;
+  }
+  
+  .texto-4{
+    grid-area: matias-texto;
+    border: solid  black 2px;
+    background-color: coral;
+    height: auto;
+  }
+  
+  
+  /* Aquella noche */
+  .cont-carousel {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #carouselExample {
+    margin: 20px;
+  }
+  
+  .video-pelicula{
+    width: 560px;
+    height: 315px; 
+    margin-top: 20px;
+  }
+  /* Footer */
+  .boton-wsp {
     position: fixed;
     right: 15px;
     bottom: 20px;
     width: 6rem;
-}
-.boton-wsp:hover{
+  }
+  
+  .boton-wsp:hover {
     transform: scale(1.1);
-}
-
-.redes{
+  }
+  
+  .redes {
     width: 6rem;
-}
-
-.redes:hover{
+  }
+  
+  .redes:hover {
     transform: scale(1.1);
-}
-
-footer{
-    background-color:coral;
+  }
+  
+  footer {
+    background-color: coral;
     text-align: center;
-}
-
-
-/* Formulario */
-body main form {
+  }
+  
+  /* Formulario */
+  body main form {
     width: 100%;
-    background-color: azure;
+    background-color: faebd7;
     height: 50%;
     padding: 30px;
-}
-
-body main form h2{
+  }
+  
+  body main form h2 {
     text-align: center;
     font-size: 30px;
     padding: 15px;
-}
-
-body main form input{
+  }
+  
+  body main form input {
     width: 100%;
     font-size: 25px;
-}
-
-body main form textarea{
+  }
+  
+  body main form textarea {
     width: 100%;
     font-size: 25px;
-}
-
-body main form #enviar{
+  }
+  
+  body main form #enviar {
     background-color: coral;
     font-size: 25px;
     padding: 15px;
-}
-
-.cont-carousel{
-    display: flex;
-    justify-content: center;
-}
-
-#carouselExample{
-    width: 50%;
-    margin: 20px;
-}
-
-
-
-@media only screen and (max-width: 600px){
-    .contenedor-flex{
-        display: flex;
-        flex-direction: column;
+  }
+  
+  /* Media para mobile */
+  @media only screen and (max-width: 768px) {
+    .contenedor-flex {
+      display: flex;
+      flex-direction: column;
     }
-    .elemento-flex{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    .elemento-flex {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      margin: 0px;
     }
-
-    .video-settings{
-        width: auto;
-        justify-content: center;
+    .video-settings {
+      width: auto;
+      justify-content: center;
+      margin: 10px;
     }
+    .contenedor-grid{
+      grid-template-columns: repeat(1,auto);
+      grid-template-areas: "nacho-imagen" 
+                          "nacho-texto"
+                          "andres-imagen" 
+                          "andres-texto"
+                          "alvaro-imagen" 
+                          "alvaro-texto"
+                          "matias-imagen"
+                           "matias-texto";
     }
+  
+    .contenedor-grid img{
+      height: 200px;
+    }
+  
+    header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    header .logo-hidden{
+      display: none;
+    }
+  
+    header .logo{
+      display: block;
+      width: 200px;
+      margin-left: 25px;
+    }
+  
+    header label{
+      display: block;
+      position: relative;
+      right: 25px;
+    }
+  
+    header label img{
+      width: 40px;
+    }
+  
+    .nav-bar{
+      position: absolute;
+      top: 50px;
+      background-color: #E2E3E5;
+      width: 100vw;
+      visibility: hidden;
+    }
+  
+    #btn_menu:checked ~ .nav-bar{
+      visibility: visible;
+  }
+  
+    nav ul li {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+    }
+  
+    p{
+      margin: auto;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+  
+    h3{
+      margin: 10px;
+    }
+  
+    .video{
+      width: 90vw;
+      height: 250px;
+    }
+  
+    #carouselExample{
+      width: 90vw;
+    }
+  
+  }
+  /*# sourceMappingURL=style.css.map */
+  
