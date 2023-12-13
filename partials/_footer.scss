@@ -1,0 +1,24 @@
+footer{   
+    background-color: coral;
+    text-align: center;
+    h3{
+    text-decoration: underline;
+    font-family: fuente-titulo;
+    font-weight: lighter;
+    }
+    a .boton-wsp{
+        position: fixed;
+        right: 15px;
+        bottom: 20px;
+        width: 6rem;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    a .redes{
+        width: 6rem;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

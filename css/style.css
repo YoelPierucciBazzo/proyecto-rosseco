@@ -13,28 +13,64 @@ header #btn_menu {
 header label {
   display: none;
 }
-header .nar-bar {
+header .nav-bar {
   text-align: center;
   display: flex;
   justify-content: center;
 }
-header .nar-bar ul div .logo-hidden {
+header .nav-bar ul div .logo-hidden {
   height: 150px;
   width: 800px;
 }
-header .nar-bar ul li {
+header .nav-bar ul li {
   list-style-type: none;
   display: inline;
   font-family: fuente-parrafo;
   font-weight: bolder;
   padding: 1rem;
 }
-header .nar-bar ul li a {
+header .nav-bar ul li a {
   text-decoration: none;
   padding: 8px;
   background-color: azure;
   border-radius: 0.5rem;
   color: coral;
+}
+
+div .alert .alert-secondary .alert-dismissible .boton {
+  border: solid black 3px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: coral;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+footer {
+  background-color: coral;
+  text-align: center;
+}
+footer h3 {
+  text-decoration: underline;
+  font-family: fuente-titulo;
+  font-weight: lighter;
+}
+footer a .boton-wsp {
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  width: 6rem;
+}
+footer a .boton-wsp:hover {
+  transform: scale(1.1);
+}
+footer a .redes {
+  width: 6rem;
+}
+footer a .redes:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -82,7 +82,7 @@
     border-radius: 10px;
   }
   
-  .boton {
+ /*  .boton {
     border: solid black 3px;
     padding: 4px;
     border-radius: 4px;
@@ -91,7 +91,7 @@
     text-decoration: none;
     color: black;
     font-size: large;
-  }
+  } */
   
   .card {
     margin: 15px;
@@ -105,51 +105,51 @@
   }
   
   /* Header */
-  .nav-bar {
+/*   .nav-bar {
     text-align: center;
     display: flex;
     justify-content: center;
-  }
+  } */
   
-  .logo-hidden {
+/*   .logo-hidden {
     height: 150px;
     width: 800px;
-  }
-  
+  } */
+/*   
   nav ul li a {
     text-decoration: none;
     padding: 8px;
     background-color: azure;
     border-radius: 0.5rem;
     color: coral;
-  }
-  
+  } */
+/*   
   nav ul li {
     list-style-type: none;
     display: inline;
     font-family: fuente-parrafo;
     font-weight: bolder;
     padding: 1rem;
-  }
+  } */
   
-  header {
+  /* header {
     background-color: coral;
     height: auto;
     z-index: 99;
     position: relative;
-  }
-  
+  } */
+/*   
   header .logo{
     display: none;
-  }
+  } */
   
-  header #btn_menu{
+/*   header #btn_menu{
     display: none;
-  }
+  } */
   
-  header label{
+/*   header label{
     display: none;
-  }
+  } */
   
   /* Main */
   main {
@@ -249,29 +249,29 @@
     margin-top: 20px;
   }
   /* Footer */
-  .boton-wsp {
+  /* .boton-wsp {
     position: fixed;
     right: 15px;
     bottom: 20px;
     width: 6rem;
-  }
+  } */
   
-  .boton-wsp:hover {
+ /*  .boton-wsp:hover {
     transform: scale(1.1);
-  }
+  } */
   
-  .redes {
+  /* .redes {
     width: 6rem;
-  }
+  } */
   
-  .redes:hover {
+  /* .redes:hover {
     transform: scale(1.1);
-  }
+  } */
   
-  footer {
+/*   footer {
     background-color: coral;
     text-align: center;
-  }
+  } */
   
   /* Formulario */
   body main form {
