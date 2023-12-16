@@ -1,19 +1,19 @@
 /* Reseteo */
-* {
+/* * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-  }
+  } */
   
   /* Generales */
-  @font-face {
+ /*  @font-face {
     font-family: "fuente-titulo";
     src: url(../medios/Interstate\ Black.ttf);
   }
   @font-face {
     font-family: "fuente-parrafo";
     src: url(../medios/HelveticaNeueLTStd-LtCn.otf);
-  }
+  } */
   body {
     background-color: antiquewhite;
   }
@@ -76,11 +76,11 @@
     height: 100%;
   }
   
-  .video-principal{
+/*   .video-principal{
     width: 80%;
     height: 400px;
     border-radius: 10px;
-  }
+  } */
   
  /*  .boton {
     border: solid black 3px;
@@ -176,7 +176,7 @@
   transform: scale(1.2);
   }
   
-  .contenedor-grid{
+/*   .contenedor-grid{
     display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-areas: "nacho-imagen nacho-texto"
@@ -186,31 +186,31 @@
   grid-gap: 10px;
   margin: 20px;
   
-  }
+  } */
   
-  .imagen-1{
+ /*  .imagen-1{
     grid-area: nacho-imagen;
   }
-  
-  .texto-1{
+   */
+/*   .texto-1{
     grid-area: nacho-texto;
     border: solid  black 2px;
     background-color: coral;
     height: auto;
-  }
+  } */
   
-  .imagen-2{
+/*   .imagen-2{
     grid-area: andres-imagen;
-  }
+  }contenedor
   
   .texto-2{
     grid-area: andres-texto;
     border: solid  black 2px;
     background-color: coral;
     height: auto;
-  }
+  } */
   
-  .imagen-3{
+/*   .imagen-3{
   grid-area: alvaro-imagen;
   }
   
@@ -219,9 +219,9 @@
     border: solid  black 2px;
     background-color: coral;
     height: auto;
-  }
+  } */
   
-  .imagen-4{
+/*   .imagen-4{
     grid-area: matias-imagen;
   }
   
@@ -230,7 +230,7 @@
     border: solid  black 2px;
     background-color: coral;
     height: auto;
-  }
+  } */
   
   
   /* Aquella noche */
