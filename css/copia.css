@@ -234,20 +234,20 @@
   
   
   /* Aquella noche */
-  .cont-carousel {
+/*   .cont-carousel {
     display: flex;
     justify-content: center;
-  }
+  } */
   
-  #carouselExample {
+/*   #carouselExample {
     margin: 20px;
-  }
+  } */
   
-  .video-pelicula{
+  /* .video-pelicula{
     width: 560px;
     height: 315px; 
     margin-top: 20px;
-  }
+  } */
   /* Footer */
   /* .boton-wsp {
     position: fixed;

@@ -26,14 +26,21 @@
             &.relleno{
                 background-color: coral;
             }
-            &.video-settings{
-             border-radius: 10px;
+        .video-settings{
+                border-radius: 10px;
                 height: 100%;
             }
-            &.class-p{
+        .class-p{
                 width: auto;
                 font-size:x-large;
+                font-size: 1.5rem;
+                font-family: fuente-parrafo;
+                font-weight: lighter;
+                margin-left: 10rem;
+                margin-right: 10rem;
+                margin-top: 2rem;
             }
+        
         }
     }
 }

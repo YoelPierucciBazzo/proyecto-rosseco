@@ -1,3 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "fuente-titulo";
   src: url(../medios/Interstate\ Black.ttf);
@@ -183,13 +189,44 @@ footer a .redes:hover {
 .main-trabajos .contenedor-flex .elemento-flex.relleno {
   background-color: coral;
 }
-.main-trabajos .contenedor-flex .elemento-flex.video-settings {
+.main-trabajos .contenedor-flex .elemento-flex .video-settings {
   border-radius: 10px;
   height: 100%;
 }
-.main-trabajos .contenedor-flex .elemento-flex.class-p {
+.main-trabajos .contenedor-flex .elemento-flex .class-p {
   width: auto;
   font-size: x-large;
+  font-size: 1.5rem;
+  font-family: fuente-parrafo;
+  font-weight: lighter;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 2rem;
+}
+
+/* MAIN AQUELLA NOCHE */
+.main-aquella-noche {
+  text-align: center;
+}
+.main-aquella-noche h1 {
+  font-size: 50px;
+  font-family: "fuente-titulo";
+  margin: 20px;
+}
+.main-aquella-noche .video-pelicula {
+  width: 560px;
+  height: 315px;
+  margin-top: 20px;
+}
+.main-aquella-noche .relleno {
+  background-color: coral;
+}
+.main-aquella-noche .cont-carousel {
+  display: flex;
+  justify-content: center;
+}
+.main-aquella-noche .cont-carousel #carouselExample {
+  margin: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
