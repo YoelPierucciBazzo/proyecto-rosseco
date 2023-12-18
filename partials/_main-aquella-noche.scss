@@ -13,12 +13,24 @@
     }
     .relleno{
         background-color: coral;
+        font-size: 1.5rem;
+        font-family: fuente-parrafo;
+        font-weight: lighter;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-top: 2rem;
+        padding: 10px;
     }
     .cont-carousel{
         display: flex;
         justify-content: center;
         #carouselExample{
             margin: 20px;
+            width: 100%;
+            .carousel-inner{
+                width: 800px;
+                height: 400px;
+            }
         }
     }
 }

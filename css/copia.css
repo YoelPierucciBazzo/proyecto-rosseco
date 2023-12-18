@@ -93,16 +93,16 @@
     font-size: large;
   } */
   
-  .card {
+ /*  .card {
     margin: 15px;
-  }
+  } */
   
-  .cont-cards {
+ /*  .cont-cards {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
-  }
+  } */
   
   /* Header */
 /*   .nav-bar {
@@ -274,28 +274,28 @@
   } */
   
   /* Formulario */
-  body main form {
+/*   body main form {
     width: 100%;
     background-color: faebd7;
     height: 50%;
     padding: 30px;
-  }
+  } */
   
-  body main form h2 {
+/*   body main form h2 {
     text-align: center;
     font-size: 30px;
     padding: 15px;
-  }
+  } */
   
-  body main form input {
+/*   body main form input {
     width: 100%;
     font-size: 25px;
-  }
+  } */
   
-  body main form textarea {
+/*   body main form textarea {
     width: 100%;
     font-size: 25px;
-  }
+  } */
   
   body main form #enviar {
     background-color: coral;
@@ -336,50 +336,50 @@
     .contenedor-grid img{
       height: 200px;
     }
-  
+ /*  
     header{
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-  
+    } */
+  /* 
     header .logo-hidden{
       display: none;
-    }
+    } */
   
-    header .logo{
+   /*  header .logo{
       display: block;
       width: 200px;
       margin-left: 25px;
-    }
-  
+    } */
+ /*  
     header label{
       display: block;
       position: relative;
       right: 25px;
-    }
+    } */
   
-    header label img{
+  /*   header label img{
       width: 40px;
-    }
+    } */
   
-    .nav-bar{
+/*     .nav-bar{
       position: absolute;
       top: 50px;
       background-color: #E2E3E5;
       width: 100vw;
       visibility: hidden;
-    }
+    } */
   
     #btn_menu:checked ~ .nav-bar{
       visibility: visible;
   }
   
-    nav ul li {
+/*     nav ul li {
       display: flex;
       flex-direction: column;
       padding: 5px;
-    }
+    } */
   
     p{
       margin: auto;

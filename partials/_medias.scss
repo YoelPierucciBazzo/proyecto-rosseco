@@ -1,0 +1,47 @@
+/* Media para mobile */
+@media only screen and (max-width: 768px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            display: block;
+            width: 200px;
+            margin-left: 25px;
+        }
+        #btn_menu{
+            &:checked{
+                ~ .nav-bar{
+                    visibility: visible;
+                }
+            }
+        }
+        label{
+            display: block;
+            position: relative;
+            right: 25px;
+            }
+            img{
+                width: 40px;
+            }
+        }
+        .nav-bar{
+            position: absolute;
+            top: 50px;
+            background-color: #E2E3E5;
+            width: 100vw;
+            visibility: hidden;
+            ul{
+                div{
+                    .logo-hidden{
+                        display: none;
+                    }
+                }
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 5px;
+                }
+            }
+        }
+    }
