@@ -1,4 +1,5 @@
 /* Media para mobile */
+/* HEADER PARA MOBILE */
 @media only screen and (max-width: 768px) {
     header{
         display: flex;
@@ -32,6 +33,8 @@
             width: 100vw;
             visibility: hidden;
             ul{
+                display: flex;
+                flex-direction: column;
                 div{
                     .logo-hidden{
                         display: none;
@@ -44,4 +47,50 @@
                 }
             }
         }
+/* MAIN PARA MOBILE */
+        .main-index{
+            h1{
+                font-size: 25px;
+            }
+            .relleno{
+                margin: auto;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                padding: 20px;
+            }
+            section{
+                .video-principal{
+                    width: 90vw;
+                    height: 250px;
+                }
+                h3{
+                    margin: 10px;
+                }
+                .contenedor-grid{
+                    grid-template-columns: repeat(1,auto);
+                                    grid-template-areas:"nacho-imagen" 
+                                    "nacho-texto"
+                                    "andres-imagen" 
+                                    "andres-texto"
+                                    "alvaro-imagen" 
+                                    "alvaro-texto"
+                                    "matias-imagen"
+                                    "matias-texto";
+                    img{
+                        height: 200px;
+                    }
+                    div{
+                        p{
+                            margin: auto;
+                            margin-top: 15px;
+                            margin-bottom: 20px;
+                            padding: 20px;
+                        }
+                    }
+                }
+                
+            }
+        }
     }
+
+

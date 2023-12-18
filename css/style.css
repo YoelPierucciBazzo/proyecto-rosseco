@@ -60,7 +60,6 @@ header .nav-bar ul li a {
 
 /* Footer */
 footer {
-  background-color: coral;
   text-align: center;
 }
 footer h3 {
@@ -142,6 +141,9 @@ div .boton {
   margin-left: 10rem;
   margin-right: 10rem;
   margin-top: 2rem;
+}
+.main-index .contenedor-grid p .resaltado {
+  font-weight: 900;
 }
 .main-index .contenedor-grid .imagen-1 {
   grid-area: nacho-imagen;
@@ -328,6 +330,7 @@ div .boton {
 }
 
 /* Media para mobile */
+/* HEADER PARA MOBILE */
 @media only screen and (max-width: 768px) {
   header {
     display: flex;
@@ -357,6 +360,10 @@ div .boton {
     width: 100vw;
     visibility: hidden;
   }
+  .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+  }
   .nav-bar ul div .logo-hidden {
     display: none;
   }
@@ -364,6 +371,36 @@ div .boton {
     display: flex;
     flex-direction: column;
     padding: 5px;
+  }
+  /* MAIN PARA MOBILE */
+  .main-index h1 {
+    font-size: 25px;
+  }
+  .main-index .relleno {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .main-index section .video-principal {
+    width: 90vw;
+    height: 250px;
+  }
+  .main-index section h3 {
+    margin: 10px;
+  }
+  .main-index section .contenedor-grid {
+    grid-template-columns: repeat(1, auto);
+    grid-template-areas: "nacho-imagen" "nacho-texto" "andres-imagen" "andres-texto" "alvaro-imagen" "alvaro-texto" "matias-imagen" "matias-texto";
+  }
+  .main-index section .contenedor-grid img {
+    height: 200px;
+  }
+  .main-index section .contenedor-grid div p {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
   }
 }
 
