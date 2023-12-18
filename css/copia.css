@@ -58,10 +58,10 @@
     border-radius: 1rem;
   }
   
-  .contenedor-flex {
+/*   .contenedor-flex {
     display: flex;
     flex-direction: column;
-  }
+  } */
   
   .elemento-flex {
     border: solid 1px black;

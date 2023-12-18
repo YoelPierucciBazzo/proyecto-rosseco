@@ -1,0 +1,39 @@
+/* MAIN TRABAJOS */
+.main-trabajos{
+    text-align: center;
+    h1{
+        font-size: 50px;
+        font-family: "fuente-titulo";
+        margin: 20px;
+    }
+    .contenedor-flex{
+        display: flex;
+        flex-direction: column;
+    
+        h2{
+            font-size: 30px;
+            font-family: fuente-titulo;
+            font-weight: lighter;
+            text-decoration: underline;
+            margin-top: 1rem; 
+        }
+        .elemento-flex{
+        border: solid 1px black;
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        margin: 20px;
+            &.relleno{
+                background-color: coral;
+            }
+            &.video-settings{
+             border-radius: 10px;
+                height: 100%;
+            }
+            &.class-p{
+                width: auto;
+                font-size:x-large;
+            }
+        }
+    }
+}
