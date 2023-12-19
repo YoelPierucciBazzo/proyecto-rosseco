@@ -91,6 +91,34 @@
                 
             }
         }
+        .main-trabajos{
+            .contenedor-flex{
+                display: flex;
+                flex-direction: column;
+                .elemento-flex{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    height: auto;
+                    margin: 0px;
+                }
+            }
+        }
     }
 
-
+/* MEDIA PARA TABLET */
+@media only screen and (max-width: 1024px){
+    .main-trabajos{
+    .contenedor-flex{
+        display: flex;
+        flex-direction: column;
+        .elemento-flex{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: auto;
+            margin: 0px;
+        }
+    }
+}
+}

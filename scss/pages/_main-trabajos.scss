@@ -21,14 +21,15 @@
         border: solid 1px black;
         display: flex;
         flex-direction: row;
-        height: 300px;
+        height: auto;
         margin: 20px;
             &.relleno{
                 background-color: coral;
             }
         .video-settings{
                 border-radius: 10px;
-                height: 100%;
+                height: auto;
+                width: auto;
             }
         .class-p{
                 width: auto;
