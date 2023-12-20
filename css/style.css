@@ -65,10 +65,11 @@ header .nav-bar ul li a {
 footer {
   text-align: center;
 }
-footer h3 {
+footer p {
   text-decoration: underline;
   font-family: fuente-titulo;
   font-weight: lighter;
+  font-size: 25px;
 }
 footer a .boton-wsp {
   position: fixed;
@@ -121,7 +122,7 @@ div .boton {
   height: 400px;
   border-radius: 10px;
 }
-.main-index h3 {
+.main-index h2 {
   text-decoration: underline;
   font-family: fuente-titulo;
   font-weight: lighter;
@@ -296,11 +297,13 @@ div .boton {
 }
 .main-aquella-noche .cont-carousel #carouselExample {
   margin: 20px;
+  width: 60%;
+}
+.main-aquella-noche .cont-carousel #carouselExample .carousel-item {
   width: 100%;
 }
-.main-aquella-noche .cont-carousel #carouselExample .carousel-inner {
-  width: 800px;
-  height: 400px;
+.main-aquella-noche .cont-carousel #carouselExample .carousel-item img {
+  width: 100%;
 }
 
 /* MAIN CONTACTOS */
@@ -377,7 +380,7 @@ div .boton {
   }
   /* MAIN PARA MOBILE */
   .main-index h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .main-index .relleno {
     margin: auto;
@@ -405,6 +408,9 @@ div .boton {
     margin-bottom: 20px;
     padding: 20px;
   }
+  .main-trabajos h1 {
+    font-size: 30px;
+  }
   .main-trabajos .contenedor-flex {
     display: flex;
     flex-direction: column;
@@ -415,6 +421,23 @@ div .boton {
     text-align: center;
     height: auto;
     margin: 0px;
+  }
+  .main-aquella-noche h1 {
+    font-size: 30px;
+  }
+  .main-aquella-noche .video-pelicula {
+    width: 80vw;
+    height: 45vw;
+  }
+  .main-aquella-noche .relleno {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .main-prensa h1 {
+    font-size: 30px;
+  }
+  .main-contacto form h1 {
+    font-size: 30px;
   }
 }
 /* MEDIA PARA TABLET */

@@ -18,10 +18,12 @@
         justify-content: center;
         #carouselExample{
             margin: 20px;
-            width: 100%;
-            .carousel-inner{
-                width: 800px;
-                height: 400px;
+            width: 60%;
+            .carousel-item{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
             }
         }
     }

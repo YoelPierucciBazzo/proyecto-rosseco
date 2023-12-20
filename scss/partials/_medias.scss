@@ -50,7 +50,7 @@
 /* MAIN PARA MOBILE */
         .main-index{
             h1{
-                font-size: 25px;
+                font-size: 30px;
             }
             .relleno{
                 margin: auto;
@@ -92,6 +92,9 @@
             }
         }
         .main-trabajos{
+            h1{
+                font-size: 30px;
+            }
             .contenedor-flex{
                 display: flex;
                 flex-direction: column;
@@ -101,6 +104,31 @@
                     text-align: center;
                     height: auto;
                     margin: 0px;
+                }
+            }
+        }
+        .main-aquella-noche{
+            h1{
+            font-size: 30px;
+            }
+            .video-pelicula{
+                width: 80vw;
+                height: 45vw;
+            }
+            .relleno{
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+        .main-prensa{
+            h1{
+                font-size: 30px;
+            }
+        }
+        .main-contacto{
+            form{
+                h1{
+                    font-size: 30px;
                 }
             }
         }
