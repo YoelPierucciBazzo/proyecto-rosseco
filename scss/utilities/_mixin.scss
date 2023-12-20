@@ -1,0 +1,22 @@
+@mixin letra-titulo {
+    font-size: 50px;
+    font-family: "fuente-titulo";
+    margin: 20px;
+}
+
+@mixin letra-parrafo{
+    font-size: 1.5rem;
+    font-family: fuente-parrafo;
+    font-weight: lighter;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+}
+
+@mixin letra-secundaria{
+            font-size: 30px;
+            font-family: fuente-titulo;
+            font-weight: lighter;
+            text-decoration: underline;
+            margin-top: 1rem; 
+}

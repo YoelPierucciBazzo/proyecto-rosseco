@@ -7,9 +7,7 @@
         height: 50%;
         padding: 30px;
         h1{
-            font-size: 50px;
-            font-family: "fuente-titulo";
-            margin: 20px;   
+            @include letra-titulo;  
         }
         input{
             width: 100%;
@@ -20,7 +18,7 @@
             font-size: 25px;
         }
         & #enviar{
-            background-color: coral;
+            background-color: $color-fondo;
             font-size: 25px;
             padding: 15px;
         }

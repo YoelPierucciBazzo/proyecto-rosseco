@@ -2,18 +2,11 @@
 .main-index{
     text-align: center;
     h1{
-        font-size: 50px;
-        font-family: "fuente-titulo";
-        margin: 20px;
+        @include letra-titulo;
     }
     .relleno{
-        background-color: coral;
-        font-size: 1.5rem;
-        font-family: fuente-parrafo;
-        font-weight: lighter;
-        margin-left: 10rem;
-        margin-right: 10rem;
-        margin-top: 2rem;
+        background-color:$color-fondo;
+        @include letra-parrafo;
     }
     .video-principal{
         width: 80%;
@@ -39,12 +32,7 @@
             border-radius: 10px;
         }
         p{
-            font-size: 1.5rem;
-            font-family: fuente-parrafo;
-            font-weight: lighter;
-            margin-left: 10rem;
-            margin-right: 10rem;
-            margin-top: 2rem; 
+            @include letra-parrafo;
             .resaltado{
                 font-weight:900;
             }
@@ -55,7 +43,7 @@
         .texto-1{
             grid-area: nacho-texto;
             border: solid  black 2px;
-            background-color: coral;
+            background-color:$color-fondo;
             height: auto;
         }
         .imagen-2{
@@ -64,7 +52,7 @@
         .texto-2{
             grid-area: andres-texto;
         border: solid  black 2px;
-        background-color: coral;
+        background-color: $color-fondo;
         height: auto; 
         }
         .imagen-3{
@@ -73,7 +61,7 @@
         .texto-3{
             grid-area: alvaro-texto;
             border: solid  black 2px;
-            background-color: coral;
+            background-color: $color-fondo;
             height: auto;
         }
         .imagen-4{
@@ -82,7 +70,7 @@
         .texto-4{
             grid-area: matias-texto;
             border: solid  black 2px;
-            background-color: coral;
+            background-color: $color-fondo;
             height: auto;
         }
     }

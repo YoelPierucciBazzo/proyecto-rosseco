@@ -2,16 +2,10 @@
 .main-prensa{
     text-align: center;
     h1{
-        font-size: 50px;
-        font-family: "fuente-titulo";
-        margin: 20px;
+        @include letra-titulo;
     }
     h2{
-        font-size: 30px;
-        font-family: fuente-titulo;
-        font-weight: lighter;
-        text-decoration: underline;
-        margin-top: 1rem;
+        @include letra-secundaria;
     }
     .cont-cards{
         display: flex;
@@ -24,7 +18,7 @@
                 border: solid black 3px;
                 padding: 4px;
                 border-radius: 4px;
-                background-color: coral;
+                background-color: $color-fondo;
                 cursor: pointer;
                 text-decoration: none;
                 color: black;
