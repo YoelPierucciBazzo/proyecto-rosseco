@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bienvenidos a la página web de la productora Rosseco Films. Informate sobre nuestros artistas, tecnicos y autores. Productora lider de la región.">
     <meta name="keywords" content="rosseco,productora,cortos,videosclips">
+    <!----link de AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Link a Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Link a css -->
@@ -43,40 +45,39 @@
         <div class="alert alert-secondary alert-dismissible">
             <a target="_blank" class="boton" href="https://www.youtube.com/watch?v=kweXmUBrgfg&t=1s"><strong>Mirá nuestro último trabajo!</strong></a>
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-          </div>
-          <!---Fin de la alerta de bootstrap-->
-        <h1>Quienes somos?</h1>
-        <p class="relleno">Somos Rosseco Films, una productora audiovisual con oficina en Arroyo Seco, Santa Fe, comprometida con la excelencia en la creación y producción de contenidos visuales. Nuestra pasión por contar historias se refleja en cada proyecto que emprendemos, siempre buscando llegar a todo el país desde nuestra localidad contando historias únicas. Nos enorgullece fusionar la creatividad local con estándares de calidad internacional, ofreciendo experiencias visuales memorables que trascienden fronteras. En Rosseco Films nuestra identidad se forja a través de la cultura local e internacional formando una perspectiva única para nuestro público.
-        </p>
+        </div>
+        <!---Fin de la alerta de bootstrap-->
+        <h1 data-aos="zoom-in">Quienes somos?</h1>
+        <p class="relleno" data-aos="flip-down">Somos Rosseco Films, una productora audiovisual con oficina en Arroyo Seco, Santa Fe, comprometida con la excelencia en la creación y producción de contenidos visuales. Nuestra pasión por contar historias se refleja en cada proyecto que emprendemos, siempre buscando llegar a todo el país desde nuestra localidad contando historias únicas.</p> <p class="relleno" data-aos="flip-down">Nos enorgullece fusionar la creatividad local con estándares de calidad internacional, ofreciendo experiencias visuales memorables que trascienden fronteras. En Rosseco Films nuestra identidad se forja a través de la cultura local e internacional formando una perspectiva única para nuestro público.</p> 
         <section>
         <iframe class="video-principal" src="https://www.youtube.com/embed/HJwsSI4hLts?si=GAUyyNw8LAbpoMY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <h2>Nuestro Equipo</h2>
         <section class="contenedor-grid">
-            <div class="imagen-1">
+            <div class="imagen-1" data-aos="fade-right">
                     <img src="./medios/ricchetti.png" alt="Ignacio Ricchetti integrante de rosseco">
                 </div>
-                <div class="texto-1">
+                <div class="texto-1" data-aos="fade-right">
                     <p><span class="resaltado">Ignacio Ricchetti:</span> Fundador de Rosseco Films, se desempeña como director y productor, algunos de sus trabajos son cortometrajes como “Prescindible”, “Desdolarización”,“Natural. Director del largometraje “Aquella Noche”. Cursó la carrera de Realización Audiovisual en la Escuela Provincial de Cine y Televisión de Rosario.
                     </p>
                 </div>
-                    <div class="imagen-2">
+                    <div class="imagen-2" data-aos="fade-right">
                     <img src="./medios/orellana.jpg" alt="Andrés Orellana integrante de rosseco">
                 </div>
-                <div class="texto-2">
+                <div class="texto-2" data-aos="fade-right">
                     <p><span class="resaltado">Andrés Orellana:</span> Productor de Rosseco Films. Ocasionalmente encargado de dirigir y escribir los videoclips musicales de la productora. Cursó la carrera de Realización Audiovisual en la Escuela Provincial de Cine y Televisión de Rosario. Actualmente se encuentra estudiando el Profesorado en Artes audiovisuales de la misma facultad.
                     </p> 
                 </div>
-                <div class="imagen-3">
+                <div class="imagen-3" data-aos="fade-right">
                     <img src="./medios/pitola.png" alt="Alvaro Pitola integrante de rosseco">
                 </div>
-                    <div class="texto-3">
+                    <div class="texto-3" data-aos="fade-right">
                     <p><span class="resaltado">Alvaro Pitola:</span> Productor, actor y guionista de Rosseco Films. Encargado de co-producir el largometraje “Aquella Noche”. Cursó la carrera de Realización Audiovisual en la Escuela Provincial de Cine y Televisión de Rosario. Estudió Actuación con Juan Nemirovsky. 
                     </p> 
                 </div>
-                <div class="imagen-4">
+                <div class="imagen-4" data-aos="fade-right">
                     <img src="./medios/delogu.jpg" alt="Matías Delogu integrante de rosseco">
                 </div>
-                <div class="texto-4">
+                <div class="texto-4" data-aos="fade-right">
                     <p><span class="resaltado">Matias Delogu:</span> Sonidista de Rosseco Films. Encargado de crear la banda sonora para distintos cortometrajes y para el largometraje “Aquella Noche”. Estudia la carrera de  “Tecnología Aplicadas al Arte Sonoro” en la facultad de música de la UNR.
                     </p> 
                 </div>
@@ -91,6 +92,13 @@
         <a target="_blank" href="https://www.instagram.com/rossecofilms/"><img class="redes" src="./medios/instagram-logo.png" alt="logo-instagram"></a>
         <a target="_blank" href="https://www.youtube.com/@rossecofilms5774"><img class="redes" src="./medios/yt-logo.png" alt="logo-youtube"></a>
         <a target="_blank" href="https://www.facebook.com/rossecofilms?locale=es_LA"><img class="redes" src="./medios/facebook-logo.png" alt="logo-facebook"></a>
+        <!----Script de AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1600
+            });
+        </script>
         <!--Script de Bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <!-- Finalización footer -->
